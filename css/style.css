@@ -1,0 +1,309 @@
+/* Umum */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0fff4;
+  color: #2f4f4f;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  color: #2d6a4f;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #52b788;
+  border-radius: 3px;
+}
+
+.halaman-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d8f3dc 0%, #b7e4c7 100%);
+}
+
+.kotak-login {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Memusatkan judul login */
+.judul-login {
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+.judul-login::after {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+}
+
+/* Styling untuk form login */
+#formLogin {
+  box-shadow: none;
+  padding: 0;
+}
+
+.error {
+  color: #e63946;
+  text-align: center;
+  margin-top: 15px;
+}
+/* Navbar */
+.navigasi {
+  background-color: #95d5b2;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navigasi ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigasi li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navigasi a {
+  text-decoration: none;
+  color: #1b4332;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navigasi a:hover {
+  background-color: #74c69d;
+}
+
+/* Section */
+.bagian {
+  padding: 80px 0;
+  position: relative;
+}
+
+.bagian::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #95d5b2, transparent);
+}
+
+.bagian:first-child::before {
+  display: none;
+}
+
+.bagian-beranda {
+  text-align: center;
+  padding: 120px 0;
+  background: linear-gradient(135deg, #d8f3dc 0%, #b7e4c7 100%);
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 30px;
+}
+
+.bagian-tentang {
+  background-color: #fff;
+  margin: 30px 0;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.bagian-visi {
+  background-color: #f8fffa;
+  margin: 30px 0;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.bagian-pesan {
+  background-color: #fff;
+  margin: 30px 0;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Gambar Profil - Diperbarui (UKURAN LEBIH KECIL) */
+.foto-profil {
+  width: 500; /* Diperkecil dari 200px */
+  height: 500px; /* Diperkecil dari 200px */
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #95d5b2; /* Border lebih tipis */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.foto-profil:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.deskripsi-profil {
+  max-width: 800px;
+}
+
+.deskripsi-profil p {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Visi Misi */
+.visi-misi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.visi, .misi {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.visi:hover, .misi:hover {
+  transform: translateY(-5px);
+}
+
+.visi h3, .misi h3 {
+  color: #40916c;
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #95d5b2;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+input, textarea, button {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #95d5b2;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #40916c;
+  box-shadow: 0 0 0 2px rgba(100, 200, 150, 0.2);
+}
+
+button {
+  background-color: #52b788;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #40916c;
+}
+
+#hasilPesan {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d8f3dc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #95d5b2;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  color: #1b4332;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  .navigasi li {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .bagian {
+    padding: 50px 0;
+  }
+  
+  .visi-misi-container {
+    flex-direction: column;
+  }
+  
+  .foto-profil {
+    width: 250px; /* Diperkecil untuk tablet */
+    height: 250px; /* Diperkecil untuk tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .foto-profil {
+    width: 100px; /* Diperkecil untuk mobile */
+    height: 100px; /* Diperkecil untuk mobile */
+    border-width: 3px;
+  }
+}

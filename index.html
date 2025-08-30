@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Pribadi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navigasi">
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang Saya</a></li>
+      <li><a href="#visi">Visi & Misi</a></li>
+      <li><a href="#pesan">Pesan</a></li>
+    </ul>
+  </nav>
+
+  <!-- Beranda -->
+  <section id="beranda" class="bagian bagian-beranda">
+    <div class="container">
+      <h1 id="salam">Halo, Selamat Datang!</h1>
+      <p>Website ini adalah profil pribadi saya.</p>
+    </div>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section id="tentang" class="bagian bagian-tentang">
+    <div class="container">
+      <h2>Tentang Saya</h2>
+      <div class="profil">
+        <img class="foto-profil" src="image/fotoku.jpg" alt="Foto Saya">
+        <div class="deskripsi-profil">
+          <p>Halo! Nama saya <strong>Muhammad Ilham Bintang</strong>. Saya adalah seorang mahasiswa yang sedang menempuh pendidikan di <strong>Universitas Negeri Surabaya</strong>, Jurusan <strong>D4 Manajemen Informatika</strong>.</p>
+          <p>Saya merupakan lulusan <strong>SMK Negeri 1 Surabaya</strong> jurusan <strong>Teknik Komputer dan Jaringan (TKJ)</strong>. Saya pernah magang di <strong>Telkom</strong> selama 6 bulan di bagian <strong>Manajemen Data</strong>.</p>
+          <p>Saat ini saya sedang aktif mengembangkan diri untuk meningkatkan hard skill dan soft skill. Saya memiliki ketertarikan khusus dalam bidang <strong>Software Engineering</strong>, <strong>AI Engineering</strong>, dan <strong>Game Development</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visi & Misi -->
+  <section id="visi" class="bagian bagian-visi">
+    <div class="container">
+      <h2>Visi & Misi</h2>
+      <div class="visi-misi-container">
+        <div class="visi">
+          <h3>Visi</h3>
+          <p>Menjadi pribadi yang bermanfaat bagi banyak orang melalui pengembangan teknologi yang inovatif.</p>
+        </div>
+        <div class="misi">
+          <h3>Misi</h3>
+          <p>Terus belajar, berbagi pengetahuan, dan berkembang setiap hari dalam bidang teknologi informasi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Pesan -->
+  <section id="pesan" class="bagian bagian-pesan">
+    <div class="container">
+      <h2>Kirim Pesan</h2>
+      <form id="formPesan">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="isiPesan">Pesan:</label>
+        <textarea id="isiPesan" name="isiPesan" required></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+      <p id="hasilPesan"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Website Pribadi Muhammad Ilham Bintang</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
